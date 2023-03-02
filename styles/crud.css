@@ -71,6 +71,6 @@ p + button{
     align-items: center;
     justify-content: center;
 }
-dialog + button{
+dialog > button{
     background-color: var(--light-green);
 }
