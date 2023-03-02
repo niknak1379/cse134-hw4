@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Native Dialogs Example</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+
+</head>
+<body>
+
+	<h1>Part1- Simple Dialogs</h1>
+
+	<button id="alert">Alert</button>
+	<button id="confirm">Confirm</button>
+	<button id="prompt">Prompt</button>
+	<button id="saferPrompt">Safer Prompt</button>
+
+    <hr>
+
+	<output id="Output"></output>
+    
+	<script>
+
+		//setup alert button and output tag
+		let alertButton = document.getElementById("alert");
+        let Output = document.getElementById("Output");
+		
+		//setup alert button event behavior
+		alertButton.addEventListener("click", () => {
+			alert("NORMAL ALERT!");
+		});
+
+		//set up confirm button event behavior
+		let confirmButton = document.getElementById("confirm");
+		confirmButton.addEventListener("click", () => {
+			let result = confirm("Are you sure you want to do this?");
+			Output.textContent = `The value returned by the confirm method is: ${result}`;
+		});
+
+		//setups up prompt button
+		let promptButton = document.getElementById("prompt");
+		promptButton.addEventListener("click", () => {
+
+			//set up prompt and checks for empty and null
+			let input = prompt("Enter powerlifting total:");
+			if (input == null || input == "") {
+				input = "User didn't enter anything";
+			}
+            
+            Output.innerHTML = `the total for this competitor is: ${input}`;    
+		});
+
+		//sets up safe prompt button
+		let safeButton = document.getElementById("saferPrompt");
+		safeButton.addEventListener("click", () => {
+
+			//set up input promp and checks for empty and null
+            let input = prompt("Enter powerlifting total:");
+			if (input == null || input == "") {
+				input = "User didn't enter anything";
+			}
+
+            //change output
+            Output.innerHTML = `the total for this competitor is: ${DOMPurify.sanitize(input)}`;
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "blog": [
+        {
+            "blogTitle": "first post",
+            "blogDate": "1998-02-02",
+            "blogSummary": "This is a non random post"
+        },
+        {
+            "blogTitle": "second post",
+            "blogDate": "2000-11-05",
+            "blogSummary": "I do not know what this is can someone help me"
+        },
+        {
+            "blogTitle": "third post",
+            "blogDate": "2023-05-01",
+            "blogSummary": "I have been trapped here in the CSE basement, plz help me"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Custom dialogues</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+
+</head>
+
+<body>
+
+	<h1>Part 2 - Custom Dialogues</h1>
+
+    <script type="module">
+
+        //import alert function
+        import {customAlert} from "./customdialog.js";
+        //set up allert button and event
+        let alertButton = document.getElementById("alert");
+        alertButton.addEventListener("click", () => {
+            customAlert("You are alerted!")
+        })
+
+        //import confirm dialog
+        import{customConfirm} from "./customdialog.js";
+
+        //set up confirm button and event
+        let confirmButton = document.getElementById("confirm");
+        confirmButton.addEventListener("click", ()=> {
+            customConfirm("Are you sure you want to do this?")
+        })
+
+        //import custom prompt function
+        import{customPrompt} from "./customdialog.js";
+
+        //set up prompt button and event
+        let promptButton = document.getElementById("Prompt");
+        promptButton.addEventListener("click", ()=> {
+            customPrompt("What is your name?")
+        })
+    </script>
+
+	<button id="alert">Alert</button>
+	<button id="confirm">Confirm</button>
+	<button id="Prompt">Prompt</button>
+
+    <hr>
+
+	<output id="Output"></output>
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+h1{
+    font-size: 2rem;
+    background-color: rgb(229, 224, 234);
+    text-align: center;
+    transition: font-size 2s, background-color 1s;
+}
+p{
+    border-style: solid;
+    border-radius: 4px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+nav {
+  background-color: rgb(249, 120, 39);
+  color: rgb(124, 119, 119);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-radius:0;
+}
+
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+body{
+  display: grid;
+  grid-template: 
+    'header header header' auto
+    'bodt body body' auto
+    'footer footer footer' auto / auto auto auto;
+}
+header {
+  grid-area: header;
+}
+main{
+  grid-area: body;
+  display:flex;
+  flex-direction: column;
+}
+#resume{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content: center;
+}
+#resbox{
+  flex-grow: 1;
+  text-align: center;
+}
+footer{
+  grid-area: footer;
+}
+ol, ul, table{
+  background-color: darkgrey;
+  border-radius: 8px;
+  border-style:dashed;
+  border-color:crimson;
+  transition: font-size 2s;
+}
+#pic{
+  display:flex;
+  justify-content: right;
+}
+h2{
+  font-size: 2em;
+}
+@media (max-width: 600px){
+  #contactsection{
+      background-color: darkgrey;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 600px){
+  #contactsection{
+    background-image: url("hi.jpg");
+      background-color: darkgrey;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  h1:hover{
+    font-size: 3rem;
+    background-color: darkslategrey;
+  }
+  nav ul:hover{
+    font-size:1.25rem;
+  }
+  #resbox{
+    animation: 0.7s rotate;
+  }
+}
+

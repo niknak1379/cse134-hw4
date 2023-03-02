@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD Blog</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+    
+    
+
+</head>
+<body>
+    <h1>Blog posts</h1>
+    
+    <script type="module">
+
+        //impodt the blog alerts
+        import * as blogAlerts from "./blog.js";
+
+        //make edit and delete global functions so onclick functionality
+        //id good
+        window.customEdit = blogAlerts.customEdit;
+        window.customDelete = blogAlerts.customDelete;
+
+        //load js on page load
+        window.addEventListener('load', blogAlerts.firstLoad());
+
+        //set up customAdd button
+        let addButton = document.getElementById("addButton");
+        addButton.addEventListener("click", () => {
+            blogAlerts.customAdd();
+        })
+        
+    </script>
+    
+    <p id="blogPosts"></p>
+    <button id="addButton">Post Comment</button>
+</body>
+</html>
