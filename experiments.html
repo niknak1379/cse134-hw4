@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nikan Ostovan">
+    <meta name="description" content="resume website">
+
+    <title>Experiments page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <style>  
+        body {
+        font-family: 'Lato', sans-serif;
+        }
+     </style>  
+</head>
+
+<body>
+    <header>
+
+        <h1>Nikan's resume Website</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/experiments.html">Experimental Features</a></li>
+            </ul>
+        </nav>
+        <button id = "HBmenu" onclick="alert('js for HBmenu not written yet')"></button>
+    </header>
+
+    <main>
+        <div id="experiments">
+            <h2>Experimental Features</h2>
+            <details>
+                <summary>Click to open Experiments section</summary>
+                <aside>
+                    <h4>Powerlifting</h4>
+                    <p>Is a sport consisting of the three Squat, Bench, Deadlift main lifts.</p>
+                </aside>
+                <pre>writing in HTML is     
+                    very fun and intersting.
+                    I wonder what writing java will be like header
+                    <code>System.out.println("hello world");</code>
+                </pre>
+
+                <p>cool sound and video check</p>
+
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <br><br>
+
+                <video width="320" height="240" controls>
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <br><br>
+
+                <figure>
+                    <picture>
+                        <source media="(min-width:650px)" srcset="pictures/index.jpeg">
+                        <img src="pictures/images.jpeg" alt="jamal deadlifting" style="width:auto;">
+                    </picture>
+                    <figcaption>jamal my idol</figcaption>
+                </figure>
+                
+                <br><br>
+                <canvas id="myCanvas" width="300" height="150"></canvas>
+                <!--dont know how to write javascript yet, but the script is supposed to draw an object and pass it to
+                    to the canvas tag-->
+                <script>
+                </script>
+                <br><br>
+
+                <template>
+                    <div>Click here</div>
+                </template>
+                <!--have to use js to render contents of the template but dont know how to yet-->
+                <script></script>
+                <br><br>
+
+                <p>here is a cool circle
+                    <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="20" stroke="red" stroke-width="2" fill="brown"/>
+                    </svg>
+                </p>
+                <p>Instagram</p>
+                <iframe src="https://www.instagram.com/" title="instagram"></iframe>
+            </details>
+            
+        </div>
+        <hr>
+    </main>
+
+    <footer>
+        <p>Author: Nikan Ostovan<br>
+        E-mail:<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">nostovan@ucsd.edu</a></p>
+    </footer>
+
+</body>
+</html>

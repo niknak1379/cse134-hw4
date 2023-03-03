@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXQE608B0C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QXQE608B0C');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nikan Ostovan">
+    <meta name="description" content="resume website">
+
+    <title>CV website for Nikan Ostovan</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <style>  
+        body {
+        font-family: 'Lato', sans-serif;
+        }
+     </style>  
+</head>
+
+<body>
+    <header>
+
+        <h1>Nikan's resume Website</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/experiments.html">Experimental Features</a></li>
+            </ul>
+        </nav>
+        <button id = "HBmenu" onclick="alert('js for HBmenu not written yet')"></button>
+    </header>
+
+    <main>
+
+        <hr>
+
+        <section>
+
+        <h2 id="about">About Me<picture id="pic">
+            <source media="(max-width:600px)" srcset="pictures/ifbb.jpeg">
+            <source media="(min-width:600px)" srcset="pictures/head.jpg">
+            <img src="pictures/ipf.png" alt="Personal logo" style="height:100px;">
+            <!-- the images are the IPF and IFBB international logos. The head shot is from the followinig link
+            https://www.google.com/url?sa=i&url=http%3A%2F%2Fstudiojphotography.ca%2Fprofessional-headshots%2F&psig=AOvVaw3Tg4Zph9V7ZvxeheUMcoHd&ust=1676698432459000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLiY0sXqm_0CFQAAAAAdAAAAABAE-->
+        </picture></h2>
+        <p>Hi my name is <b>Nikan Ostovan</b>. Fun fact my name means <i>good people</i> 
+            in persian. Below is a detailed summary of my resume</p>
+            <section id="resume">
+                
+                <ul id="resbox">
+                    <b>Education</b>
+                    <li>GPA: 4.00</li>
+                    <li>University of California San Diego</li>
+                 </ul>
+
+                
+                <ol id="resbox">
+                    <b>Experience</b>
+                    <li>multiple school projects</li>
+                    <li>future internships</li>
+                </ol>
+
+             
+                <ol id="resbox">
+                    <b>Project Description</b>
+                    <li>Invented water</li>
+                    <li> <strong><em>Built</em></strong> the internet</li>
+                </ol>
+
+                
+                <ol id="resbox">
+                    <b>Skills</b>
+                    <li>communicative</li>
+                    <li>creative</li>
+                    <li>efficient</li>
+                </ol>
+
+                <table id="resbox">
+
+                    <caption><b>Skill table</b></caption>
+                    <colgroup>
+                    <col style="background-color:grey">
+                    </colgroup>
+                    <tr>
+                        <th>name of skill</th>
+                    </tr>
+
+                    <tr>
+                        <td>communicative</td>
+                    </tr>
+
+                    <tr>
+                        <td>creative</td>
+                    </tr>
+
+                    <tr>
+                        <td>good at making <span style="color:brown">tables</span></td>
+                    </tr>
+                </table>
+
+                
+                <ol id="resbox">
+                    <b>Hobbies</b>
+                    <li>powerlifting</li>
+                    <li>Guitar</li>
+                </ol>
+            </section>
+            
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <p>Author: Nikan Ostovan<br>
+        E-mail:<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">nostovan@ucsd.edu</a></p>
+    </footer>
+
+</body>
+</html>

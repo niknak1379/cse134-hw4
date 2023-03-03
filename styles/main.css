@@ -1,49 +1,48 @@
+:root{
+  --light-blue: #41B3A3;
+  --purple: #C38D9E;
+  --brown: #E27D60;
+  --pink: #F64C72;
+  --dark-purple: #553D67;
+  --dark-blue: #05386B;
+  --green: #5cdb95;
+  --light-green: #edf5e1;
+}
+
 h1{
     font-size: 2rem;
-    background-color: rgb(229, 224, 234);
+    background-color: var(--green);
     text-align: center;
     transition: font-size 2s, background-color 1s;
-}
-p{
-    border-style: solid;
-    border-radius: 4px;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0)
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+    border-radius: 12px;
 }
 nav {
-  background-color: rgb(249, 120, 39);
-  color: rgb(124, 119, 119);
+  background-color: var(--light-blue);
+  color: var(--dark-purple);
+  border-radius: 12px;
+  padding:1px;
+  
+}
+#contactsection{
+  color: var(--purple);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  border-style: solid;
-  border-radius:0;
 }
 
-
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-}
 
 body{
+  background-color: var(--purple);
+  /*
   display: grid;
   grid-template: 
     'header header header' auto
     'bodt body body' auto
     'footer footer footer' auto / auto auto auto;
+    */
 }
 header {
   grid-area: header;
@@ -64,9 +63,12 @@ main{
   text-align: center;
 }
 footer{
+  background-color: var(--green);
   grid-area: footer;
+  color: var(--pink);
+  border-radius: 8px;
 }
-ol, ul, table{
+section ol, section ul,  section table{
   background-color: darkgrey;
   border-radius: 8px;
   border-style:dashed;
@@ -80,25 +82,45 @@ ol, ul, table{
 h2{
   font-size: 2em;
 }
-@media (max-width: 600px){
-  #contactsection{
-      background-color: darkgrey;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+#hero{
+  background-image: url('nikan.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 320px){
+  nav {
+    display: none;
+  }
+  #HBmenu{
+    visibility: visible;
+    width: 50px;
+    height: 40px;
+    background-image: url('menu-burger.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   nav ul {
     flex-direction: column;
     text-align: center;
   }
 }
-@media (min-width: 600px){
-  #contactsection{
-    background-image: url("hi.jpg");
-      background-color: darkgrey;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+@media (min-width: 500px){
+  nav{
+    display: block;
+  }
+  #HBmenu{
+    visibility:hidden;
   }
   nav ul {
     flex-direction: row;
@@ -107,11 +129,12 @@ h2{
     font-size: 3rem;
     background-color: darkslategrey;
   }
-  nav ul:hover{
-    font-size:1.25rem;
-  }
   #resbox{
     animation: 0.7s rotate;
   }
 }
+@media (min-width: 768px){
+  
+}
+
 
