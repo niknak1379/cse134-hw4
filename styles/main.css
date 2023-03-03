@@ -11,7 +11,8 @@
 
 h1{
     font-size: 2rem;
-    background-color: var(--green);
+    background-color: var(--dark-blue);
+    color: var(--purple);
     text-align: center;
     transition: font-size 2s, background-color 1s;
     border-radius: 12px;
@@ -20,8 +21,7 @@ nav {
   background-color: var(--light-blue);
   color: var(--dark-purple);
   border-radius: 12px;
-  padding:1px;
-  
+
 }
 #contactsection{
   color: var(--purple);
@@ -31,6 +31,11 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+nav li{
+  border-radius: 5px;
+  background-color: var(--green);
+  padding:5px;
 }
 
 
@@ -66,7 +71,7 @@ h2{
 #hero{
   background-image: url('nikan.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
 #resume{
@@ -98,6 +103,9 @@ h2{
   nav {
     display: none;
   }
+  #dude{
+    display: none;
+  }
   #HBmenu{
     visibility: visible;
     width: 50px;
@@ -114,6 +122,9 @@ h2{
 }
 @media (min-width: 500px){
   nav{
+    display: block;
+  }
+  #dude{
     display: block;
   }
   #HBmenu{
@@ -137,9 +148,6 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--pink);
-  }
-  #dude{
-    display: none;
   }
   section ol, section ul,  section table{
     background-color: var(--dark-blue);
