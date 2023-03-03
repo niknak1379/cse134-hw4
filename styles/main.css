@@ -36,13 +36,6 @@ nav ul {
 
 body{
   background-color: var(--purple);
-  /*
-  display: grid;
-  grid-template: 
-    'header header header' auto
-    'bodt body body' auto
-    'footer footer footer' auto / auto auto auto;
-    */
 }
 header {
   grid-area: header;
@@ -52,16 +45,7 @@ main{
   display:flex;
   flex-direction: column;
 }
-#resume{
-  display:flex;
-  flex-wrap:wrap;
-  gap:20px;
-  justify-content: center;
-}
-#resbox{
-  flex-grow: 1;
-  text-align: center;
-}
+
 footer{
   background-color: var(--green);
   grid-area: footer;
@@ -75,10 +59,7 @@ section ol, section ul,  section table{
   border-color:crimson;
   transition: font-size 2s;
 }
-#pic{
-  display:flex;
-  justify-content: right;
-}
+
 h2{
   font-size: 2em;
 }
@@ -87,6 +68,22 @@ h2{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+#resume{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content: center;
+}
+
+#resbox{
+  flex-grow: 1;
+  text-align: center;
+}
+
+#pic{
+  display:flex;
+  justify-content: right;
 }
 @keyframes rotate {
   0% {
@@ -134,7 +131,22 @@ h2{
   }
 }
 @media (min-width: 768px){
-  
+  #resHero{
+    background-image: url('squat.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--pink);
+  }
+  #dude{
+    display: none;
+  }
+  section ol, section ul,  section table{
+    background-color: var(--dark-blue);
+    border-radius: 8px;
+    color: var(--pink);
+    transition: font-size 2s;
+  }
 }
 
 
